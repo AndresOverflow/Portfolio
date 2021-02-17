@@ -28,13 +28,22 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root">
+      <svg width="500px" height="500px" viewBox="0 0 1024 1024" enable-background="new 0 0 512 512" xml:space="preserve">
+        <path id="time-3-icon" d="M256,50C142.229,50,50,142.229,50,256c0,113.77,92.229,206,206,206c113.77,0,206-92.23,206-206
+          C462,142.229,369.77,50,256,50z M256,417c-88.977,0-161-72.008-161-161c0-88.979,72.008-161,161-161c88.977,0,161,72.007,161,161
+          C417,344.977,344.992,417,256,417z M382.816,265.785c1.711,0.297,2.961,1.781,2.961,3.518v0.093c0,1.72-1.223,3.188-2.914,3.505
+          c-37.093,6.938-124.97,21.35-134.613,21.35c-13.808,0-25-11.192-25-25c0-9.832,14.79-104.675,21.618-143.081
+          c0.274-1.542,1.615-2.669,3.181-2.669h0.008c1.709,0,3.164,1.243,3.431,2.932l18.933,119.904L382.816,265.785z"/>
+        </svg>
+        
+        
 
       <div id='stars'></div>
       <div id='stars2'></div>
       <div id='stars3'></div>
       <div class="container">
         <nav class="navigation">
-          navigation
+          <div class="image"></div>
         </nav>
         <header class="header">
           <h1 class="heading1"> Andres' Portfolio</h1>
@@ -109,7 +118,7 @@
 
             <div class="feature_card">
               <svg class="feature_card__icon">
-                <use xlink:href="../src/assets/svg/sprite.svg#icon-global"></use>
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
               </svg>
               <div class="feature_card__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate temporibus, provident placeat similique delectus aperiam qui inventore cum eaque expedita in, nisi labore velit rerum ipsum iste ullam doloremque nihil?
@@ -118,7 +127,15 @@
 
             <div class="feature_card">
               <svg class="feature_card__icon">
-                
+                <defs>
+                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad3)" />
+                <text fill="#ffffff" font-size="45" font-family="Verdana" x="150" y="86">
+                SVG</text>
               </svg>
               <div class="feature_card__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis facere voluptatibus, aspernatur accusantium adipisci impedit non placeat minus! Praesentium veritatis sit ad accusamus earum. A, ea aperiam. Explicabo, repellat et!
@@ -136,7 +153,7 @@
 
             <div class="feature_card">
               <svg class="feature_card__icon">
-                <use xling:href="src/img/svg/sprite.svg#icon-global"></use>
+                <use xling:href="assets/svg/star-full.svg"></use>
               </svg>
               <div class="feature_card__text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis facere voluptatibus, aspernatur accusantium adipisci impedit non placeat minus! Praesentium veritatis sit ad accusamus earum. A, ea aperiam. Explicabo, repellat et!
@@ -148,9 +165,20 @@
         </section>
 
         <section class="contact_me">
-          contact_me
-          asdfsad
-          asdf
+          <div>
+          <h2 class="heading2 title_centered text_green"> Contact me</h2>
+
+          <div class="contact_cards">
+            contact me on linkedin
+            contact me on email
+            Check my github
+            Download my resume
+
+          </div>
+
+          </div>
+          
+        
         </section>
         
       </div>

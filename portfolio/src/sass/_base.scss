@@ -2,12 +2,12 @@
 $color-blue-light: #08fdd8;
 $color-black: #222;
 $color-khaki : khaki;
+$color-green : rgb(152, 251, 152);
 
 $color-tiktok-black: #010101;
 $color-tiktok-blue: #69C9D0;
 $color-tiktok-white: #FFFFFF;
 $color-tiktok-red: #EE1D52;
-
 
 
 
@@ -33,6 +33,7 @@ html {
 
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     //overflow: hidden;
+    // como hacer que llegue hasta el final
     height: 100%;
 }
 
@@ -56,6 +57,12 @@ body {
     padding: 4rem;
     font-size: 3rem;
 }
+
+#time-3-icon {
+  fill: $color-blue-light;
+}
+
+
   
   /*#stars {
     width: 1px;

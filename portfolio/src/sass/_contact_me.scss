@@ -1,6 +1,6 @@
 .contact_me{
-    background-color: palegreen;
 
-    grid-column: 1 / span 2;
+    grid-column: 1 / -1;
     grid-row: 6/7;
+    box-shadow: 0px 0px 10px 3px $color-green;
 }
