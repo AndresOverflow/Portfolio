@@ -1,34 +1,54 @@
+
+$color-blue-light: #08fdd8;
+$color-black: #222;
+$color-khalia : khaki;
+
+
+$color-white: #FFFFFF;
+$color-grey: #222222;
+
+$font-primary: 'Dancing Script', cursive;
+
+
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  height: 100%; }
+    box-sizing: border-box;
+    font-size: 62.5%; // 1 rem = 10px
+
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    //overflow: hidden;
+    height: 100%;
+}
+
 
 body {
-  font-family: "Dancing Script", cursive;
-  font-weight: Medium;
-  line-height: 1.6rem;
-  color: #FFFFFF; }
+    font-family: $font-primary;
+    font-weight: Medium;
+    line-height: 1.6rem;
+    color: $color-white;
+}
 
-.container {
-  display: grid;
-  grid-template-rows: 5rem 10rem repeat(4, min-content);
-  grid-template-columns: [left-blood-start] 1fr [left-blood-end center-start] repeat(8, minmax(min-content, 14rem)) [right-blood-start center-end] 1fr [right-blood-end];
-  grid-gap: 5rem;
-  margin: 0 10%;
-  background-color: #222222;
-  box-shadow: 0 10px 10px #FFF;
-  padding: 4rem;
-  font-size: 3rem; }
+.container{
+    display: grid;
+    grid-template-rows:  5rem 10rem repeat(4, min-content);
+    grid-template-columns: [left-blood-start] 1fr [left-blood-end center-start] repeat(8, minmax( min-content, 14rem)) [right-blood-start center-end] 1fr [right-blood-end];
+    grid-gap: 5rem;
+    margin: 0 10%;
 
-/*#stars {
+    background-color: $color-grey;
+    box-shadow: 0 10px 10px #FFF;
+    padding: 4rem;
+    font-size: 3rem;
+}
+  
+  /*#stars {
     width: 1px;
     height: 1px;
     background: transparent;
@@ -88,82 +108,3 @@ body {
     }
   }
   */
-.heading1 {
-  color: cadetblue;
-  line-height: 2rem;
-  margin: 5rem auto; }
-
-.text {
-  color: chocolate; }
-
-.heading2 {
-  color: chartreuse;
-  line-height: 2rem;
-  margin: 6rem auto; }
-
-.skill_centered {
-  max-width: 30rem;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 7rem; }
-
-.back-end_centered {
-  max-width: 30rem;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-
-.about_me {
-  background-color: khaki;
-  grid-column: 1/-1;
-  grid-row: 5/6; }
-
-.skills {
-  background-color: rgba(255, 166, 0, 0.548);
-  grid-column: 1/-1;
-  grid-row: 3/ 4; }
-
-.skill_cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content;
-  grid-gap: 2rem; }
-
-.back-end {
-  background-color: cornflowerblue;
-  grid-column: 1/2; }
-
-.back-end_content {
-  background-color: chartreuse;
-  display: grid;
-  grid-template-rows: min-content;
-  grid-gap: 3rem;
-  padding-left: 2rem;
-  justify-content: center; }
-
-.front-end {
-  background-color: cadetblue;
-  grid-column: 2/3; }
-
-.navigation {
-  background-color: blueviolet;
-  grid-column: 1/-1;
-  grid-row: 1/2; }
-
-.header {
-  background-color: palevioletred;
-  grid-column: 1/-1;
-  grid-row: 2/3;
-  overflow: hidden; }
-
-.contact_me {
-  background-color: palegreen;
-  grid-column: 1 / span 2;
-  grid-row: 6/7; }
-
-.projects {
-  background-color: orangered;
-  grid-column: 1/-1;
-  grid-row: 4/5; }

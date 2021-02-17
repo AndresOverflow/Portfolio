@@ -1,0 +1,39 @@
+.skills{
+    background-color: rgba(255, 166, 0, 0.548);
+    grid-column: 1 / - 1;
+    grid-row: 3/ 4;
+
+
+
+}
+
+.skill_cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    grid-gap: 2rem;
+
+   
+}
+
+.back-end{
+    background-color: cornflowerblue;
+    grid-column: 1/2;
+}
+
+.back-end_content{
+    background-color: chartreuse;
+
+    display:grid;
+    grid-template-rows: min-content;
+    grid-gap: 3rem;
+    padding-left: 2rem;
+    justify-content: center;
+
+}
+
+
+.front-end{
+    background-color: cadetblue;
+    grid-column: 2/3;
+}
