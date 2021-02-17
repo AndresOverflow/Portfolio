@@ -15,9 +15,8 @@
     margin: 6rem auto;
 }
 
-.skill_centered{
+.title_centered{
     
-    color: $color-blue-light;
 
     max-width: 30rem;
     text-align: center;
@@ -26,6 +25,14 @@
     margin-bottom: 7rem;
 }
 
+
+.text_blue-light{
+    color: $color-blue-light;
+}   
+
+.text_red-tiktok{
+    color: $color-tiktok-red;
+}
 .subtitle_skill_centered{
     max-width: 30rem;
     text-align: center;
