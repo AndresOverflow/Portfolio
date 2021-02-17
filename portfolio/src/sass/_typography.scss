@@ -11,7 +11,7 @@
 
 .heading2 {
     color:chartreuse;
-    line-height: 2rem;
+    line-height: 1;
     margin: 6rem auto;
 }
 
@@ -32,6 +32,10 @@
 
 .text_red-tiktok{
     color: $color-tiktok-red;
+}
+
+.text_khaki{
+    color: $color-khaki;
 }
 .subtitle_skill_centered{
     max-width: 30rem;
