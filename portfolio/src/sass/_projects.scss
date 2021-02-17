@@ -1,5 +1,8 @@
 .projects{
-    background-color: orangered;
+    //background-color: orangered;
+    box-shadow: 0px 0px 10px 3px $color-tiktok-red;
     grid-column: 1 / - 1;
     grid-row: 4/5;
+
+
 }

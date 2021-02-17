@@ -17,6 +17,8 @@
 
 .skill_centered{
     
+    color: $color-blue-light;
+
     max-width: 30rem;
     text-align: center;
     margin: 0 auto;
@@ -24,11 +26,28 @@
     margin-bottom: 7rem;
 }
 
-.back-end_centered{
+.subtitle_skill_centered{
     max-width: 30rem;
     text-align: center;
     margin: 0 auto;
     margin-top : 3rem;
     margin-bottom: 3rem;
 
+}
+
+.html_tag{
+    padding-left: 0%;
+}
+.body_tag{
+    padding-left: 10%;
+}
+.ul_tag{
+    padding-left: 20%;
+}
+.il_tag{
+    padding-left: 30%;
+}
+
+.language-item{
+    color: goldenrod;
 }

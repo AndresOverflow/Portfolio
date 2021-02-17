@@ -3,6 +3,15 @@ $color-blue-light: #08fdd8;
 $color-black: #222;
 $color-khalia : khaki;
 
+$color-tiktok-black: #010101;
+$color-tiktok-blue: #69C9D0;
+$color-tiktok-white: #FFFFFF;
+$color-tiktok-red: #EE1D52;
+
+
+
+
+
 
 $color-white: #FFFFFF;
 $color-grey: #222222;
@@ -31,7 +40,7 @@ html {
 body {
     font-family: $font-primary;
     font-weight: Medium;
-    line-height: 1.6rem;
+    line-height: 1.2;
     color: $color-white;
 }
 
