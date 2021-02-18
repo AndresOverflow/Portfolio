@@ -6,27 +6,46 @@
 
     display: grid;
 
-    grid-template-rows: repeat(min-content);
+    grid-template-rows: repeat(max-content);
 
     grid-gap:3rem;
     padding-left: 10rem;
 
     &__title{
         grid-row: 2/3;
-        margin: 0 0;
-        margin-bottom: 5rem;
+        grid-column: 1 / - 1;
+        margin: 1rem 0;
+        border-right: 0px solid $color-tiktok-white;
+        margin-left: 3rem;
+        overflow: hidden;
+        animation: appearBlue 1s ease-out;
 
-        color: $color-tiktok-blue;
-        animation: moveInLeft 1s ease-out;
+        &__content {
+            margin: 3rem auto;
+            color: $color-tiktok-blue;
+            animation: moveInLeft 1s ease-out;
+        }
+
     }
 
     &__text{
+        content: "";
         grid-row: 3/ 4;
         grid-column: 1 / -1;
-        color: white;
-        padding-left: 0rem;
-        animation: moveInRight 1s ease-out;
+        margin: 1rem 0;
+        border-left: 0px solid $color-tiktok-white;
+        margin-left: 3rem;
+        overflow: hidden;
+        animation: appearWhite 1s ease-out;
 
+        &__content {
+            margin: 0 auto;
+            color: $color-tiktok-white;
+            animation: moveInRight 0.5s ease-out;
+        }
+
+
+        /*
         &::before {
             content: "";
             background-color: #FFBA10;
@@ -36,19 +55,31 @@
             animation: moveInRight 1s ease-out;
             opacity: 1;
         }
+        */
 
     }
     
 
     &__subtitle{
+        content: "";
         grid-row: 1/2;
-        margin: 0 0;
+        grid-column: 1/-1;
+        margin: 1rem 0;
+        border-left: 0px solid $color-tiktok-red;
         margin-left: 3rem;
-        color:$color-tiktok-red;
+        overflow: hidden;
+        animation: appearRed 1s ease-out;
+
+        &__content {
+            margin: 2rem auto;
+            color: $color-tiktok-red;
+            animation: moveInRight 1s ease-out;
+        }
     }
 
     
 }
+/*
 .hello {
     
     grid-row: 3/4;
@@ -65,12 +96,12 @@
 
 
 }
-
+*/
 
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(10rem);
+        transform: translateX(100rem);
     }
     100% {
         opacity: 1;
@@ -81,10 +112,39 @@
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(-10rem);
+        transform: translateX(-50rem);
     }
     100% {
         opacity: 1;
         transform: translateX(0rem);
+    }
+}
+
+@keyframes appearRed {
+    99% {
+        border-left: 3px solid $color-tiktok-red;
+    }
+    100% {
+        border-left: none;
+        
+    }
+}
+
+@keyframes appearBlue {
+    99% {
+        border-right: 3px solid $color-tiktok-blue;
+    }
+    100% {
+        border-left: none;
+        
+    }
+}
+@keyframes appearWhite {
+    99% {
+        border-left: 3px solid $color-tiktok-white;
+    }
+    100% {
+        border-left: none;
+        
     }
 }
