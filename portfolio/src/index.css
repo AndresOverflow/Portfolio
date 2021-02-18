@@ -143,7 +143,6 @@ body {
   color: goldenrod; }
 
 .about_me {
-  background-color: rgba(202, 194, 122, 0.459);
   grid-column: 1/-1;
   grid-row: 5/6;
   box-shadow: 0px 0px 10px 3px khaki; }
@@ -153,7 +152,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: max-content;
   row-gap: 7rem;
-  padding-left: 10rem; }
+  column-gap: 10rem;
+  margin: 5rem; }
 
 .feature_card {
   display: grid;
@@ -170,6 +170,9 @@ body {
     color: #FFFFFF;
     grid-column: 2/3; }
 
+#yellow-icon {
+  fill: khaki; }
+
 .skills {
   grid-column: 1/-1;
   grid-row: 3/ 4;
@@ -179,7 +182,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content;
-  grid-gap: 2rem; }
+  grid-gap: 2rem;
+  margin: 5rem; }
 
 .back-end {
   grid-column: 1/2; }
@@ -349,6 +353,13 @@ body {
   grid-row: 6/7;
   box-shadow: 0px 0px 10px 3px palegreen; }
 
+.contact_me_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+  grid-gap: 2rem;
+  margin: 5rem; }
+
 .projects {
   box-shadow: 0px 0px 10px 3px #EE1D52;
   grid-column: 1/-1;
@@ -359,7 +370,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(min-content, max-content);
-  grid-gap: 2rem; }
+  grid-gap: 2rem;
+  margin: 5rem; }
 
 .project-item {
   background-color: rgba(230, 52, 141, 0.452);

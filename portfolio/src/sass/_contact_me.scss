@@ -4,3 +4,11 @@
     grid-row: 6/7;
     box-shadow: 0px 0px 10px 3px $color-green;
 }
+
+.contact_me_cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    grid-gap: 2rem;
+    margin: 5rem;
+}
