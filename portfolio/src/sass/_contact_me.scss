@@ -9,21 +9,25 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content;
-    grid-gap: 2rem;
+    grid-row-gap: 4rem;
+    grid-column-gap: 0;
     margin: 5rem;
+    
 }
 
 .contact_me_card{
-    background-color: rgba(255, 228, 196, 0.404);
+    //background-color: rgba(255, 228, 196, 0.404);
     display:grid;
     grid-template-rows: max-content max-content;
+    justify-items: center;
 
     &__icon{
-        background-color: blue;
+        //background-color: blue;
+        margin: 0 auto;
     }
 
     &__text{
-        background-color: cadetblue;
+        //background-color: cadetblue;
     }
 }
 

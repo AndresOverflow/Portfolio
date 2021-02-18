@@ -357,17 +357,16 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content;
-  grid-gap: 2rem;
+  grid-row-gap: 4rem;
+  grid-column-gap: 0;
   margin: 5rem; }
 
 .contact_me_card {
-  background-color: rgba(255, 228, 196, 0.404);
   display: grid;
-  grid-template-rows: max-content max-content; }
+  grid-template-rows: max-content max-content;
+  justify-items: center; }
   .contact_me_card__icon {
-    background-color: blue; }
-  .contact_me_card__text {
-    background-color: cadetblue; }
+    margin: 0 auto; }
 
 .projects {
   box-shadow: 0px 0px 10px 3px #EE1D52;
@@ -394,6 +393,11 @@ body {
   font-size: 3rem; }
 
 .project-image {
+  width: 100px;
+  height: 100px;
+  background-image: url(assets/img/falda.png);
+  background-position: center;
+  background: cover;
   margin-bottom: 2rem; }
 
 .project-description {

@@ -29,6 +29,12 @@
     font-size: 3rem;
 }
 .project-image{
+    width: 100px;
+    height: 100px;
+    // desde el directorio src
+    background-image: url(assets/img/falda.png);
+    background-position: center ;
+    background: cover;
     margin-bottom: 2rem;
 }
 
