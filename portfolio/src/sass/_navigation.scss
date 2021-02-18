@@ -1,11 +1,45 @@
 .navigation{
-    background-color: blueviolet;
+    //background-color: blueviolet;
     grid-column: 1 / - 1;
     grid-row: 1/2;
+    display:grid;
+    grid-template-columns: 1fr repeat(4, minmax(7rem, max-content));
+    grid-gap: 2rem;
 }
 
-.image{
-    width: 50%;
-    height: 50%;
-    background: url(assets/svg/star-full.svg);
+
+.linkedin{
+    grid-column: 2/3;
+    fill:cadetblue
+}
+
+.github{
+    grid-column: 3/4;
+}
+
+.gmail{
+    grid-column: 4/5;
+}
+
+
+.resume{
+    grid-column: 5/6;
+}
+
+
+#linkedin-icon {
+    fill: $color-tiktok-blue;
+    box-shadow: 0px 0px 2px 4px $color-tiktok-blue;
+}
+
+#github-icon {
+    fill: $color-tiktok-red;
+}
+
+#gmail-icon {
+    fill: $color-khaki;
+}
+
+#resume-icon {
+    fill: $color-green;
 }
