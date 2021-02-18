@@ -3,6 +3,7 @@ $color-blue-light: #08fdd8;
 $color-black: #222;
 $color-khaki : khaki;
 $color-green : rgb(152, 251, 152);
+$color-yellow: rgb(218, 165, 32);
 
 $color-tiktok-black: #010101;
 $color-tiktok-blue: #69C9D0;
@@ -47,7 +48,7 @@ body {
 
 .container{
     display: grid;
-    grid-template-rows: 7rem 10rem repeat(4, min-content);
+    grid-template-rows: 7rem min-content repeat(4, min-content);
     grid-template-columns: [left-blood-start] 1fr [left-blood-end center-start] repeat(8, minmax( min-content, 14rem)) [right-blood-start center-end] 1fr [right-blood-end];
     grid-gap: 5rem;
     margin: 0 10%;

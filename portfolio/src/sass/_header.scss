@@ -1,6 +1,90 @@
 .header{
-    background-color: palevioletred;
+    //background-color: palevioletred;
     grid-column: 1 / - 1;
     grid-row: 2/3;
     overflow:hidden;
+
+    display: grid;
+
+    grid-template-rows: repeat(min-content);
+
+    grid-gap:3rem;
+    padding-left: 10rem;
+
+    &__title{
+        grid-row: 2/3;
+        margin: 0 0;
+        margin-bottom: 5rem;
+
+        color: $color-tiktok-blue;
+        animation: moveInLeft 1s ease-out;
+    }
+
+    &__text{
+        grid-row: 3/ 4;
+        grid-column: 1 / -1;
+        color: white;
+        padding-left: 0rem;
+        animation: moveInRight 1s ease-out;
+
+        &::before {
+            content: "";
+            background-color: #FFBA10;
+            border-color: white;
+            border-style: none;
+            box-shadow: 1px 1px 3px 3px white;
+            animation: moveInRight 1s ease-out;
+            opacity: 1;
+        }
+
+    }
+    
+
+    &__subtitle{
+        grid-row: 1/2;
+        margin: 0 0;
+        margin-left: 3rem;
+        color:$color-tiktok-red;
+    }
+
+    
+}
+.hello {
+    
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    content: "";
+    background-color: transparent;
+    //border-color: white;
+    //border-style: none;
+    //border-right : 1px none white;
+    box-shadow: -10px 0px 3px 3px white;
+    animation: moveInLeft 1s ease-out;
+    opacity: 1;
+
+
+
+}
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
 }

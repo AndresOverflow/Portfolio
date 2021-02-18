@@ -19,7 +19,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 7rem 10rem repeat(4, min-content);
+  grid-template-rows: 7rem min-content repeat(4, min-content);
   grid-template-columns: [left-blood-start] 1fr [left-blood-end center-start] repeat(8, minmax(min-content, 14rem)) [right-blood-start center-end] 1fr [right-blood-end];
   grid-gap: 5rem;
   margin: 0 10%;
@@ -233,12 +233,6 @@ body {
 
 #resume-icon {
   fill: palegreen; }
-
-.header {
-  background-color: palevioletred;
-  grid-column: 1/-1;
-  grid-row: 2/3;
-  overflow: hidden; }
 
 .contact_me {
   grid-column: 1 / -1;
