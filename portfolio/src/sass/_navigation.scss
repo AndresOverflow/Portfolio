@@ -5,12 +5,17 @@
     display:grid;
     grid-template-columns: 1fr repeat(4, minmax(7rem, max-content));
     grid-gap: 2rem;
+    
+    &__item {
+        display:grid;
+        grid-template-rows: max-content max-content;
+    }
 }
 
 
 .linkedin{
     grid-column: 2/3;
-    fill:cadetblue
+    fill:rgb(114, 95, 160);
 }
 
 .github{
@@ -26,10 +31,16 @@
     grid-column: 5/6;
 }
 
+.resume:hover .shadow {
+
+    box-shadow: 0px 0px 100px 15px $color-green;
+}
+
 
 #linkedin-icon {
     fill: $color-tiktok-blue;
     box-shadow: 0px 0px 2px 4px $color-tiktok-blue;
+    
 }
 
 #github-icon {
@@ -42,4 +53,37 @@
 
 #resume-icon {
     fill: $color-green;
+}
+.svg-linkedin:hover{
+    border-radius: 30%;
+    width: 72px;
+    height: 72px;
+    box-shadow: 0px 0px 100px 15px $color-tiktok-blue;
+}
+.svg-github:hover{
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    box-shadow: 0px 0px 100px 15px $color-tiktok-red;
+}
+.svg-gmail:hover{
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    box-shadow: 0px 0px 100px 15px $color-khaki;
+}
+.svg-resume:hover{
+    border-radius: 25%;
+    width: 72px;
+    height: 72px;
+    //box-shadow: 0px 0px 100px 15px $color-green;
+
+
+}
+.shadow {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 2 / 3 ;
+    
 }
