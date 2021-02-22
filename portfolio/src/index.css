@@ -230,15 +230,27 @@ body {
   grid-row: 1/2;
   display: grid; }
 
+.link-svgWithShadow {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  display: grid; }
+
 .linkedin {
-  grid-column: 2/3;
-  fill: #725fa0; }
+  grid-column: 2/3; }
 
 .github {
   grid-column: 3/4; }
 
 .gmail {
+  grid-row: 1/2;
   grid-column: 4/5; }
+
+.svg-gmail {
+  grid-row: 1/2;
+  grid-column: 1/-1; }
+
+.gmail:hover .shadow {
+  box-shadow: 0px 0px 100px 15px khaki, 5px 5px 100px 15px khaki, -5px -5px 100px 15px khaki; }
 
 .resume {
   grid-row: 1/2;
@@ -249,8 +261,7 @@ body {
   grid-column: 1/-1; }
 
 .resume:hover .shadow {
-  box-shadow: 0px 0px 100px 15px palegreen;
-  box-shadow: 0px 0px 100px 30px white; }
+  box-shadow: 0px 0px 200px 15px palegreen, 5px 5px 100px 15px palegreen, -5px -5px 100px 15px palegreen; }
 
 #linkedin-icon {
   fill: #69C9D0;
@@ -280,8 +291,7 @@ body {
 .svg-gmail:hover {
   border-radius: 50%;
   width: 72px;
-  height: 72px;
-  box-shadow: 0px 0px 100px 15px khaki; }
+  height: 72px; }
 
 .svg-resume:hover {
   border-radius: 25%;
@@ -348,11 +358,23 @@ body {
     border-left: 0px solid #EE1D52;
     margin-left: 3rem;
     overflow: hidden;
-    animation: appearRed 1s ease-out; }
+    animation: appearRed 1s ease-out;
+    /*text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+    letter-spacing: 2;
+    */ }
     .header__subtitle__content {
       margin: 2rem auto;
       color: #EE1D52;
       animation: moveInRight 1s ease-out; }
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite; }
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite; }
 
 /*
 .hello {
@@ -405,6 +427,78 @@ body {
     border-left: 3px solid #FFFFFF; }
   100% {
     border-left: none; } }
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none; }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483; } }
+
+@keyframes flicker {
+  from {
+    opacity: 1; }
+  4% {
+    opacity: 0.9; }
+  6% {
+    opacity: 0.85; }
+  8% {
+    opacity: 0.95; }
+  10% {
+    opacity: 0.9; }
+  11% {
+    opacity: 0.922; }
+  12% {
+    opacity: 0.9; }
+  14% {
+    opacity: 0.95; }
+  16% {
+    opacity: 0.98; }
+  17% {
+    opacity: 0.9; }
+  19% {
+    opacity: 0.93; }
+  20% {
+    opacity: 0.99; }
+  24% {
+    opacity: 1; }
+  26% {
+    opacity: 0.94; }
+  28% {
+    opacity: 0.98; }
+  37% {
+    opacity: 0.93; }
+  38% {
+    opacity: 0.5; }
+  39% {
+    opacity: 0.96; }
+  42% {
+    opacity: 1; }
+  44% {
+    opacity: 0.97; }
+  46% {
+    opacity: 0.94; }
+  56% {
+    opacity: 0.9; }
+  58% {
+    opacity: 0.9; }
+  60% {
+    opacity: 0.99; }
+  68% {
+    opacity: 1; }
+  70% {
+    opacity: 0.9; }
+  72% {
+    opacity: 0.95; }
+  93% {
+    opacity: 0.93; }
+  95% {
+    opacity: 0.95; }
+  97% {
+    opacity: 0.93; }
+  to {
+    opacity: 1; } }
 
 .contact_me {
   grid-column: 1 / -1;

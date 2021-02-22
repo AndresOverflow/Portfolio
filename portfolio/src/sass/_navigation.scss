@@ -21,10 +21,16 @@
     display: grid;
 }
 
+.link-svgWithShadow {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display:grid;
+}
+
+
 //backdropbackground blur: en el texto
 .linkedin{
     grid-column: 2/3;
-    fill:rgb(114, 95, 160);
 }
 
 .github{
@@ -32,7 +38,18 @@
 }
 
 .gmail{
+    grid-row: 1/2;
     grid-column: 4/5;
+}
+.svg-gmail{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+
+}
+
+.gmail:hover .shadow {
+
+    box-shadow: 0px 0px 100px 15px $color-khaki, 5px 5px 100px 15px $color-khaki, -5px -5px 100px 15px $color-khaki; 
 }
 
 
@@ -47,9 +64,7 @@
 
 .resume:hover .shadow {
 
-    box-shadow: 0px 0px 100px 15px $color-green;
-
-    box-shadow: 0px 0px 100px 30px white;
+    box-shadow: 0px 0px 200px 15px $color-green, 5px 5px 100px 15px $color-green, -5px -5px 100px 15px $color-green; 
 }
 
 
@@ -86,7 +101,7 @@
     border-radius: 50%;
     width: 72px;
     height: 72px;
-    box-shadow: 0px 0px 100px 15px $color-khaki;
+    //box-shadow: 0px 0px 100px 15px $color-khaki;
 }
 .svg-resume:hover{
     border-radius: 25%;
