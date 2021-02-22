@@ -24,6 +24,7 @@
 }
 
 .back-end_content{
+    font-family: $font-secundary;
     //background-color: chartreuse;
     color: grey;
 
@@ -31,6 +32,7 @@
     grid-template-rows: min-content;
     //grid-gap: 3rem;
     padding-left: 2rem;
+    grid-gap: 1rem;
     justify-content: center;
 
 }
@@ -42,6 +44,7 @@
 }
 
 .front-end_content {
+    font-family: $font-secundary;
     //background-color: brown;
     color:grey;
 

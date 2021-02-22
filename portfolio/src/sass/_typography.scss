@@ -64,5 +64,10 @@
 }
 
 .language-item{
+    font-family: $font-primary;
     color: goldenrod;
+}
+
+.language-item:hover{
+    border-bottom: 1px solid goldenrod;
 }
