@@ -584,7 +584,6 @@ body {
   background-color: rgba(230, 52, 141, 0.452);
   display: grid;
   grid-template-rows: min-content min-content min-content;
-  justify-items: center;
   grid-gap: 3rem; }
 
 .project-title {
@@ -594,27 +593,51 @@ body {
   color: #FFFFFF;
   font-size: 3.5rem; }
 
-.project-pic-text {
-  grid-row: 2/3;
-  display: grid;
-  grid-template-rows: max-content; }
-  .project-pic-text:hover .project-image {
-    filter: blur(2px);
-    background-color: transparent; }
-  .project-pic-text:hover .project-techused {
-    opacity: 40; }
+/*
+.project-pic-text{
+    grid-row: 2/3;
 
-.project-image_container {
+    display: grid;
+    grid-template-rows: max-content;
+}
+*/
+.project-image-container {
+  display: grid;
   grid-row: 2/3;
-  grid-column: 1 /-1; }
+  grid-column: 1 /-1;
+  justify-self: center; }
+  .project-image-container:link, .project-image-container:visited, .project-image-container:active {
+    text-decoration: none; }
 
 .project-image {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
   background-position: center;
   background: cover; }
 
 .image {
   width: 30rem;
   height: 24rem; }
+
+.project-techs {
+  grid-row: 1/ -1;
+  grid-column: 1/ -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0; }
+  .project-techs:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    opacity: 1;
+    box-shadow: 0px 0px 10px 10px grey; }
+  .project-techs__text {
+    text-align: center; }
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .project-techs:hover {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.6); } }
 
 .project-description {
   grid-row: 3/4;
@@ -638,4 +661,65 @@ body {
     grid-column: 1/ -1;
     opacity: 0;
 }
+*/
+/*
+.wrapper{
+    width: 1000px;
+    height: 1000px;
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+      
+  }
+  
+  .layer1 {
+    
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-align: center;
+  
+  
+    max-width: 60%;
+    max-height: 60%;
+    padding: 20px 40px;
+    
+    grid-row: 1/2;
+    grid-column: 1/3;
+    align-self:center;
+    justify-self:center;
+  }
+  .background {
+    //background-color: red;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    background-image: url('https://interactive-examples.mdn.mozilla.net/media/examples/firefox-logo.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .layer1:hover {
+    background-color:rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    color: white;
+    
+    
+  }
+  
+  .layer3 {
+    background-color: orange;
+    grid-rows: 1/2;
+    grid-column: 3/4;
+  }
+  .layer3:hover {
+    font-size:100px;
+  }
+
+
+  <div class="wrapper">
+  <div class="layer background">asd</div>
+  <div class="layer layer1">layer1</div>
+  <div class="layer layer3">layer3</div>
+</div>
+
 */
