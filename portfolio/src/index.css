@@ -573,7 +573,6 @@ body {
   grid-row: 4/5; }
 
 .project-cards {
-  background-color: rgba(160, 68, 114, 0.438);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(min-content, max-content);
@@ -581,14 +580,12 @@ body {
   margin: 5rem; }
 
 .project-item {
-  background-color: rgba(230, 52, 141, 0.452);
   display: grid;
   grid-template-rows: min-content min-content min-content;
   grid-gap: 3rem; }
 
 .project-title {
   grid-row: 1/2;
-  background-color: blue;
   margin: 0 auto;
   color: #FFFFFF;
   font-size: 3.5rem; }
@@ -613,7 +610,8 @@ body {
   grid-row: 1/-1;
   grid-column: 1/-1;
   background-position: center;
-  background: cover; }
+  background: cover;
+  line-height: 1; }
 
 .image {
   width: 30rem;
@@ -641,8 +639,8 @@ body {
 
 .project-description {
   grid-row: 3/4;
-  background-color: bisque;
-  font-size: 2.6rem; }
+  font-size: 2.6rem;
+  text-align: center; }
 
 /*
 .project-image-compiler {
