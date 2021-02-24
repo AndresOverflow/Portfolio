@@ -630,6 +630,9 @@ body {
     box-shadow: 0px 0px 10px 2px #111111; }
   .project-techs__text {
     text-align: center; }
+    .project-techs__text__title {
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .project-techs:hover {
