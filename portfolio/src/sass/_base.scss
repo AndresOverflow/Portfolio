@@ -61,21 +61,28 @@ body {
 }
 
 
-
+/*
 #stars{
   background: transparent;
   color: green;
   font-size: 5rem;
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   animation: animStar 50s linear infinite;
   //usar mixins y funciones pasandole el offset
   box-shadow: 100px 100px green,
-              100px 100px green;
+              100px 102px green,
+              100px 104px green,
+              100px 106px green,
+              100px 108px green,
+              100px 108px green;
 
 }
 
-  /*
+*/
+
+/*
+
   #stars {
     width: 1px;
     height: 1px;

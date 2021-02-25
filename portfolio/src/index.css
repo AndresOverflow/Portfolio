@@ -28,16 +28,27 @@ body {
   padding: 4rem;
   font-size: 3rem; }
 
-#stars {
+/*
+#stars{
   background: transparent;
   color: green;
   font-size: 5rem;
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   animation: animStar 50s linear infinite;
-  box-shadow: 100px 100px green, 100px 100px green; }
+  //usar mixins y funciones pasandole el offset
+  box-shadow: 100px 100px green,
+              100px 102px green,
+              100px 104px green,
+              100px 106px green,
+              100px 108px green,
+              100px 108px green;
 
+}
+
+*/
 /*
+
   #stars {
     width: 1px;
     height: 1px;
@@ -560,12 +571,25 @@ body {
   grid-column-gap: 0;
   margin: 5rem; }
 
-.contact_me_card {
+.contact_me_card__container {
   display: grid;
   grid-template-rows: max-content max-content;
   justify-items: center; }
-  .contact_me_card__icon {
-    margin: 0 auto; }
+  .contact_me_card__container:link, .contact_me_card__container:visited {
+    text-decoration: none;
+    color: white; }
+  .contact_me_card__container:active {
+    color: grey; }
+
+.contact_me_card__icon {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  margin: 0 auto; }
+
+.contact_me_card__text {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  margin: 0 auto; }
 
 .projects {
   box-shadow: 0px 0px 10px 3px #EE1D52;
