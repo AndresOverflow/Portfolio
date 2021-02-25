@@ -171,7 +171,7 @@ body {
 
 .feature_cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 300px));
   grid-template-rows: max-content;
   row-gap: 7rem;
   column-gap: 10rem;
@@ -202,7 +202,7 @@ body {
 
 .skill_cards {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content;
   grid-gap: 2rem;
   margin: 5rem; }
@@ -566,7 +566,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content;
   grid-row-gap: 4rem;
-  grid-column-gap: 0;
+  grid-column-gap: 2rem;
   margin: 5rem; }
 
 .contact_me_card__container {
@@ -596,7 +596,7 @@ body {
 
 .project-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, max-content);
   grid-auto-rows: minmax(min-content, max-content);
   grid-gap: 4rem;
   margin: 5rem; }
@@ -610,7 +610,8 @@ body {
   grid-row: 1/2;
   margin: 0 auto;
   color: goldenrod;
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  text-align: center; }
 
 /*
 .project-pic-text{

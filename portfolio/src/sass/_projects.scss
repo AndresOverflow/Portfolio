@@ -10,7 +10,8 @@
 .project-cards{
     //background-color: rgba(160, 68, 114, 0.438);
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    //grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, max-content);
     grid-auto-rows: minmax(min-content, max-content);
     grid-gap: 4rem;
     margin: 5rem;
@@ -30,6 +31,7 @@
     margin: 0 auto;
     color: $color-yellow;
     font-size: 3.5rem;
+    text-align: center;
 }
 /*
 .project-pic-text{
