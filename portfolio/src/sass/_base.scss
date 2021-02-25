@@ -50,7 +50,8 @@ body {
 .container{
     display: grid;
     grid-template-rows: 7rem min-content repeat(4, min-content);
-    grid-template-columns: [left-blood-start] 1fr [left-blood-end center-start] repeat(8, minmax( min-content, 14rem)) [right-blood-start center-end] 1fr [right-blood-end];
+    //grid-template-columns: [left-blood-start] 1fr [left-blood-end center-start] repeat(8, minmax( min-content, 14rem)) [right-blood-start center-end] 1fr [right-blood-end];
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-gap: 5rem;
     margin: 0 10%;
 
