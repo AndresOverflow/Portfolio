@@ -28,18 +28,22 @@
 
 .text_blue-light{
     color: $color-blue-light;
+    text-shadow: $color-blue-light 1px 0px 6px;
 }   
 
 .text_red-tiktok{
     color: $color-tiktok-red;
+    text-shadow: $color-tiktok-red 1px 0px 6px;
 }
 
 .text_khaki{
     color: $color-khaki;
+    text-shadow: $color-khaki 1px 0px 6px;
 }
 
 .text_green{
-    color: $color-green
+    color: $color-green;
+    text-shadow: $color-green 1px 0px 6px;
 }
 .subtitle_skill_centered{
     max-width: 30rem;

@@ -127,16 +127,20 @@ body {
   margin-bottom: 7rem; }
 
 .text_blue-light {
-  color: #08fdd8; }
+  color: #08fdd8;
+  text-shadow: #08fdd8 1px 0px 6px; }
 
 .text_red-tiktok {
-  color: #EE1D52; }
+  color: #EE1D52;
+  text-shadow: #EE1D52 1px 0px 6px; }
 
 .text_khaki {
-  color: khaki; }
+  color: khaki;
+  text-shadow: khaki 1px 0px 6px; }
 
 .text_green {
-  color: palegreen; }
+  color: palegreen;
+  text-shadow: palegreen 1px 0px 6px; }
 
 .subtitle_skill_centered {
   max-width: 30rem;
@@ -611,7 +615,8 @@ body {
   margin: 0 auto;
   color: goldenrod;
   font-size: 3.5rem;
-  text-align: center; }
+  text-align: center;
+  text-shadow: goldenrod 1px 0 3px; }
 
 /*
 .project-pic-text{
