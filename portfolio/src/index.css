@@ -106,6 +106,72 @@ body {
   to {
     transform: translateY(-2000px); } }
 
+.heading1 {
+  color: cadetblue;
+  line-height: 1;
+  margin: 5rem auto; }
+
+/*
+.text {
+    color:chocolate;
+
+
+}
+*/
+.heading2 {
+  color: chartreuse;
+  line-height: 1;
+  margin: 6rem auto; }
+
+.title_centered {
+  max-width: 30rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 7rem; }
+
+.text_blue-light {
+  color: #08fdd8;
+  text-shadow: #08fdd8 1px 0px 6px; }
+
+.text_red-tiktok {
+  color: #EE1D52;
+  text-shadow: #EE1D52 1px 0px 6px; }
+
+.text_khaki {
+  color: khaki;
+  text-shadow: khaki 1px 0px 6px; }
+
+.text_green {
+  color: palegreen;
+  text-shadow: palegreen 1px 0px 6px; }
+
+.subtitle_skill_centered {
+  max-width: 30rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.html_tag {
+  padding-left: 0%; }
+
+.body_tag {
+  padding-left: 10%; }
+
+.ul_tag {
+  padding-left: 20%; }
+
+.il_tag {
+  padding-left: 30%; }
+
+.language-item {
+  font-family: Inter, cursive;
+  color: goldenrod; }
+
+.language-item:hover {
+  border-bottom: 1px solid goldenrod; }
+
 .about_me {
   grid-column: 1/-1;
   grid-row: 5/6;
